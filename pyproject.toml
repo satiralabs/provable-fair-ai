@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "provable-fair-ai"
+version = "1.0.0"
+description = "Algorithmic Transparency & Mathematical Audit Sandbox for AI Decision Systems"
+authors = [
+    { name = "Abenezer (Susan)", email = "contact@satiralabs.com" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["ai-fairness", "bias-audit", "disparate-impact", "fintech-compliance", "cryptographic-commitments"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+provable-fair-ai = "fairness.cli:main"
